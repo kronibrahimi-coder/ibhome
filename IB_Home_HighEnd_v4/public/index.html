@@ -1,0 +1,196 @@
+
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IB Home — Smart Living</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{--teal:#06b6d4;--indigo:#2563eb;--muted:#64748b}
+    body{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#f8fafc,#ffffff);color:#0f172a;min-height:100vh;scroll-behavior:smooth}
+    .card{background:white;border-radius:18px;box-shadow:0 12px 30px rgba(2,6,23,0.08);overflow:hidden}
+    .slogan{font-family:'Great Vibes', cursive;font-size:20px;color:#000;margin-top:2px}
+    .fade{opacity:0;transform:translateY(18px) scale(0.99);transition:all 700ms cubic-bezier(.2,.9,.3,1);will-change:transform,opacity}
+    .fade.show{opacity:1;transform:none}
+    .nav a{color:var(--muted);transition:color .2s}
+    .nav a:hover{color:var(--indigo)}
+    .product-img{height:160px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#f0f9ff,#ffffff);}
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:flex;align-items:center;justify-content:center;z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
+    .modal.show{opacity:1;pointer-events:auto}
+    .modal .box{max-width:860px;width:94%;background:white;padding:18px;border-radius:14px}
+    .btn{background:var(--indigo);color:white;padding:8px 12px;border-radius:10px}
+  </style>
+</head>
+<body class="antialiased">
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-4">
+        <img src="logo.svg" alt="IB Home" class="w-20 h-20">
+      </a>
+      <nav class="nav hidden md:flex gap-6 text-sm items-center">
+        <a href="#products">Products</a>
+        <a href="#about" id="rrethLink">Rreth Nesh</a>
+        <a href="#why">Pse Ne</a>
+        <a href="#contact">Kontakt</a>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="ml-2 bg-[var(--indigo)] text-white px-4 py-2 rounded-lg">Konsultim</button>
+      </nav>
+      <div class="md:hidden"><button class="p-2 bg-white rounded">☰</button></div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-block" style="background:linear-gradient(90deg,var(--indigo),var(--teal));color:white;padding:6px 12px;border-radius:999px;font-weight:700">Smart Living</div>
+        <h1 class="mt-6 text-4xl md:text-5xl font-extrabold leading-tight">IB Home — Elegancë, Siguri dhe Kursim për Shtëpinë Tuaj</h1>
+        <p class="mt-4 text-slate-600 max-w-xl">Ne ndërthurim dizajnin me teknologjinë për të ofruar pajisje që thjeshtësojnë jetën. Instalime profesionale, suport i dedikuar dhe integrime të sigurta.</p>
+        <div class="mt-6 flex gap-3 flex-wrap">
+          <a href="#products" class="btn">Shiko Produktet</a>
+          <a href="#contact" class="border border-slate-200 px-4 py-2 rounded-2xl">Kërko Demo</a>
+        </div>
+        <div class="mt-8 grid grid-cols-2 gap-3 max-w-md">
+          <div class="card p-4">
+            <div class="text-xs text-slate-500">Përputhshmëria</div>
+            <div class="font-medium">Alexa, Google Home</div>
+          </div>
+          <div class="card p-4">
+            <div class="text-xs text-slate-500">Garancia</div>
+            <div class="font-medium">2 vite garanci</div>
+          </div>
+        </div>
+      </div>
+      <div class="card rounded-3xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80" class="w-full h-96 object-cover" alt="Smart home living">
+      </div>
+    </section>
+
+    <!-- Products grid -->
+    <section id="products" class="mt-16">
+      <h2 class="text-2xl font-bold">Produktet Tona</h2>
+      <p class="text-slate-600 mt-2">Zgjidhje premium që përmirësojnë komoditetin dhe kursimin.</p>
+      <div id="grid" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Why choose us with enhanced copy -->
+    <section id="why" class="mt-16 grid md:grid-cols-3 gap-6">
+      <div class="card p-6 fade"> 
+        <h3 class="font-semibold">Jeta më e organizuar</h3>
+        <p class="mt-2 text-slate-600">Automatizimet tona ju ndihmojnë të organizoni rutinën e përditshme, duke kursyer kohë dhe duke ju dhënë kontroll të plotë.</p>
+      </div>
+      <div class="card p-6 fade">
+        <h3 class="font-semibold">Shpenzime më të ulëta</h3>
+        <p class="mt-2 text-slate-600">Optimizimi i ngrohjes, ndriçimit dhe pajisjeve ul konsumin dhe faturat mujore të energjisë.</p>
+      </div>
+      <div class="card p-6 fade">
+        <h3 class="font-semibold">Komoditet & Siguri</h3>
+        <p class="mt-2 text-slate-600">Kontrolloni gjithçka nga telefoni; ndjeni siguri me njoftime në kohë reale dhe monitorim 24/7.</p>
+      </div>
+    </section>
+
+    <!-- About / Mission -->
+    <section id="about" class="mt-16 card p-8">
+      <h3 class="text-2xl font-bold">Rreth IB Home</h3>
+      <p class="mt-2 text-slate-600"><strong>Misioni ynë:</strong> Ne kursejm energji, përmirësojm jetën dhe sjellim rehati inteligjente në çdo shtëpi. <br><br> IB Home ofron zgjidhje premium për shtëpi inteligjente, me fokus pasigurimin e përvojës së përdoruesit, dizajn të thjeshtë dhe kursim të energjisë.</p>
+    </section>
+
+    <!-- Hub spotlight -->
+    <section id="hub" class="mt-16 card p-8">
+      <div class="md:flex items-center gap-6">
+        <div class="w-full md:w-1/3 product-img"><img src="images/hub.svg" alt="Hub" style="width:120px"></div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold">Smart Hub — Ekrani Qendror</h3>
+          <p class="mt-2 text-slate-600">Përfitoni komandën e plotë me ekranin qendror që lidh të gjitha pajisjet: nga termostati, perdet, kamerat dhe ndërprerësit. Hub-i ofron vizualizim konsumimi, automatikë dhe kontroll lokal për privatësi.</p>
+          <ul class="mt-4 text-slate-600 list-disc list-inside">
+            <li>Integrim me Amazon Alexa dhe Google Home</li>
+            <li>Panel statistikash për konsum energjie</li>
+            <li>Kontrolle lokale dhe backup për rreziqet e rrjetit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini stats chart -->
+    <section id="stats" class="mt-16 rounded-2xl overflow-hidden bg-gradient-to-r from-[var(--indigo)] to-[var(--teal)] text-white p-8 shadow">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-bold">Si mund të ulni faturën e energjisë</h3>
+        <p class="mt-2 text-slate-100/90">Instalimi i pajisjeve inteligjente mund të sjellë ulje reale të shpenzimeve mujore.</p>
+        <div class="mt-6 flex justify-center"><canvas id="miniChart" width="340" height="160"></canvas></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16 card p-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-2xl font-bold">Kontakto na</h3>
+          <p class="mt-2 text-slate-600">Na shkruani ose telefononi për konsultime dhe instalime.</p>
+          <p class="mt-4"><strong>📞</strong> +383 43 899 820 — Konsultime Falas</p>
+          <p class="mt-2"><strong>✉️</strong> <a href="mailto:kron.ibrahimi@gmail.com">kron.ibrahimi@gmail.com</a></p>
+        </div>
+        <form id="contactForm" class="bg-slate-50 p-4 rounded-xl">
+          <input id="name" placeholder="Emri juaj" class="w-full p-3 rounded-lg border mb-3" required>
+          <input id="email" placeholder="Email" class="w-full p-3 rounded-lg border mb-3" required>
+          <textarea id="message" placeholder="Mesazhi juaj" class="w-full p-3 rounded-lg border mb-3" rows="4" required></textarea>
+          <div class="flex gap-3">
+            <button type="submit" class="px-4 py-2 bg-[var(--indigo)] text-white rounded-2xl">Dërgo</button>
+            <button type="button" class="px-4 py-2 border rounded-2xl" onclick="navigator.clipboard?.writeText('+383 43 899 820')">Kopjo Telefon</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="mt-16 text-sm text-slate-500 text-center">© 2025 IB Home — Smart Living • Made in Kosovo 🇽🇰</footer>
+  </main>
+
+  <!-- Modal for product details -->
+  <div id="modal" class="modal"><div class="box card"><div id="modalContent"></div><div style="text-align:right;margin-top:12px"><button id="closeModal" class="btn">Mbyll</button></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // fetch products and render with modal handlers
+    fetch('/api/products').then(r=>r.json()).then(data=>{
+      const grid = document.getElementById('grid');
+      data.forEach(p=>{
+        const el = document.createElement('article');
+        el.className = 'card p-6 fade';
+        el.innerHTML = `<div class="product-img"><img src="images/${p.key}.svg" alt="${p.name}" style="width:140px"></div>
+          <h4 class="mt-4 font-semibold">${p.name}</h4>
+          <p class="text-slate-600 mt-2">${p.desc_sq.substring(0,120)}...</p>
+          <div class="mt-4 flex gap-2"><button class="px-3 py-2 bg-[var(--indigo)] text-white rounded" data-id="${p.id}" onclick="openModal(${p.id})">Shiko Detaje</button><button class="px-3 py-2 border rounded">Kontakt</button></div>`;
+        grid.appendChild(el);
+      });
+      setTimeout(()=>document.querySelectorAll('.fade').forEach((el,i)=>setTimeout(()=>el.classList.add('show'), i*120)), 250);
+    });
+
+    // open modal with product details
+    function openModal(id){
+      fetch('/api/products').then(r=>r.json()).then(data=>{
+        const p = data.find(x=>x.id===id);
+        const content = document.getElementById('modalContent');
+        content.innerHTML = `<div style="display:flex;gap:12px;align-items:center"><div style="flex:0 0 160px"><img src="images/${p.key}.svg" style="width:140px"></div><div><h3 style="margin:0">${p.name}</h3><p style="color:#64748b">${p.desc_sq}</p><p style="margin-top:8px"><strong>Përputhshmëria:</strong> Alexa, Google Home</p></div></div>`;
+        document.getElementById('modal').classList.add('show');
+      });
+    }
+    document.getElementById('closeModal').addEventListener('click', ()=>document.getElementById('modal').classList.remove('show'));
+
+    // contact submit
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const payload = { name: document.getElementById('name').value, email: document.getElementById('email').value, message: document.getElementById('message').value };
+      fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(()=>{ alert('Faleminderit! Do t\'ju kontaktojmë së shpejti.'); document.getElementById('contactForm').reset(); });
+    });
+
+    // smooth anchor fix for Rreth Nesh (in case user clicked nav)
+    document.getElementById('rrethLink').addEventListener('click', function(e){ e.preventDefault(); document.getElementById('about').scrollIntoView({behavior:'smooth'}); });
+
+    // mini chart
+    const ctx = document.getElementById('miniChart').getContext('2d');
+    new Chart(ctx, { type:'bar', data:{ labels:['Shtëpi Normale','Me IB Home'], datasets:[{ data:[120,84], backgroundColor:['rgba(255,255,255,0.6)','rgba(255,255,255,0.95)'], borderRadius:12 }] }, options:{ plugins:{ legend:{display:false} }, scales:{ y:{ ticks:{ color:'rgba(255,255,255,0.95)' } }, x:{ ticks:{ color:'rgba(255,255,255,0.95)' } } } } });
+
+    // year
+    document.addEventListener('DOMContentLoaded', ()=>{ document.querySelector('footer').textContent = `© ${new Date().getFullYear()} IB Home — Smart Living • Made in Kosovo 🇽🇰`; });
+  </script>
+</body>
+</html>

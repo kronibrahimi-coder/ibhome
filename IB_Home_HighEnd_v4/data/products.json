@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Hub",
+    "key": "hub",
+    "desc_sq": "Qendra kryesore që lidh të gjithë pajisjet IB Home. Menaxho dhe monitoro nga një ekran qendror, me integrim zanor dhe kontrolle lokale për privatësi maksimale. Mbron lidhjet, përditëson firmware dhe ofron grafika të konsumit të energjisë."
+  },
+  {
+    "id": 2,
+    "name": "Robot Vacuum",
+    "key": "robot_vac",
+    "desc_sq": "Pastrues robotik me navigim inteligjent, planifikim të pastrimit dhe ndarje hapësinore. I përshtatshëm për dysheme të ndryshme dhe lehtëson pastrimin e përditshëm."
+  },
+  {
+    "id": 3,
+    "name": "Smart Curtain Motor",
+    "key": "curtain",
+    "desc_sq": "Motor për perdet e dritareve me kontroll nga aplikacioni dhe programim sipas orarit ose ndriçimit natyror. Siguron privatësi dhe kursim të dritës natyrore për të ulur përdorimin e ndriçimit."
+  },
+  {
+    "id": 4,
+    "name": "Door/Window Sensor",
+    "key": "sensor",
+    "desc_sq": "Sensor të hollë dhe pa tela për dyer dhe dritare që njofton menjëherë hapjet, i shkëlqyer për automatizime dhe përforcimin e sigurisë së shtëpisë."
+  },
+  {
+    "id": 5,
+    "name": "Smart Circuit Breaker",
+    "key": "breaker",
+    "desc_sq": "Çelës elektrik inteligjent me monitorim të konsumit të energjisë në kohë reale. Lejon fikje/ndezje të rrjeteve të veçanta për kursim dhe siguri."
+  },
+  {
+    "id": 6,
+    "name": "Smart Light Switch",
+    "key": "switch",
+    "desc_sq": "Pult ndriçimi inteligjent me funksion dimmer, skena dhe kontroll zëri. Ndihmon për kursim dhe përmirëson komoditetin në shtëpi."
+  },
+  {
+    "id": 7,
+    "name": "Motion Sensor",
+    "key": "motion",
+    "desc_sq": "Sensor i lëvizjes për automatizime—ndezi dritat kur hyn dikush dhe fik në mungesë aktiviteti. Përdor bateri të kursyera dhe ka rreze zbulimi të zgjeruar."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "ib-home-highend-v4",
+  "version": "1.0.0",
+  "description": "IB Home - High-end v4 (Express backend + static frontend)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
